@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="DoublePixel makes mobile games. Privacy policies, terms and support for our games.">
+<title>DoublePixel</title>
+<style>
+  :root{--brand1:#3b6ef5;--brand2:#7b3ff2;--ink:#1e2740;--muted:#6b7688;--line:#eef1f6}
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(160deg,#eef2fb,#e6ebf6);color:var(--ink);
+       font:16px/1.7 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:34px 16px}
+  .card{max-width:780px;margin:0 auto 28px;background:#fff;border-radius:22px;overflow:hidden;
+        box-shadow:0 16px 46px rgba(22,32,64,.14)}
+  .hero{background:linear-gradient(135deg,var(--brand1),var(--brand2));color:#fff;padding:36px 36px 30px}
+  .hero h1{margin:0;font-size:28px;letter-spacing:.2px}
+  .hero .sub{margin-top:8px;font-size:14px;opacity:.92}
+  .hero .switch{margin-top:12px;font-size:14px}
+  .hero .switch a{color:#fff;text-decoration:underline}
+  .body{padding:26px 36px 34px}
+  .game{border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:14px 0}
+  .game h2{font-size:18px;margin:0 0 4px;color:#28324c}
+  .game .links a{margin-inline-end:14px;font-size:14px}
+  .empty{color:var(--muted)}
+  a{color:var(--brand1);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .foot{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+  @media (max-width:560px){body{padding:20px 16px}.hero{padding:28px 22px 24px}.hero h1{font-size:24px}.body{padding:20px 22px 26px}}
+</style>
+</head>
+<body>
+  <div class="card" id="en" lang="en" dir="ltr">
+    <div class="hero">
+      <h1>DoublePixel</h1>
+      <div class="sub">Mobile games · Privacy, terms and support</div>
+      <div class="switch"><a href="#he">עברית ↓</a></div>
+    </div>
+    <div class="body">
+      <p>DoublePixel makes mobile games. This site hosts the privacy policy, terms and support page
+      of each of our games. The address of a page does not change once it has been published to a store.</p>
+
+      <!-- One .game card per game:
+      <div class="game">
+        <h2>Game Name</h2>
+        <div class="links"><a href="game-slug/privacy-policy.html">Privacy Policy</a> <a href="game-slug/terms.html">Terms</a></div>
+      </div>
+      -->
+      <p class="empty">Our first games on this site are coming soon. Earlier games:
+      <a href="https://barsagivv.github.io/arclogic-studio/">ArcLogic Studio</a>.</p>
+
+      <div class="foot">© 2026 DoublePixel (Bar Sagiv) · <a href="mailto:barsagivv@gmail.com">barsagivv@gmail.com</a></div>
+    </div>
+  </div>
+
+  <div class="card" id="he" lang="he" dir="rtl">
+    <div class="hero">
+      <h1><bdi>DoublePixel</bdi></h1>
+      <div class="sub">משחקי מובייל · פרטיות, תנאים ותמיכה</div>
+      <div class="switch"><a href="#en">English ↑</a></div>
+    </div>
+    <div class="body">
+      <p><bdi>DoublePixel</bdi> מפתחת משחקי מובייל. באתר הזה נמצאים מדיניות הפרטיות, תנאי השימוש
+      ודף התמיכה של כל אחד מהמשחקים שלנו. הכתובת של דף לא משתנה אחרי שפורסמה בחנות.</p>
+
+      <p class="empty">המשחקים הראשונים באתר הזה יגיעו בקרוב. משחקים קודמים:
+      <a href="https://barsagivv.github.io/arclogic-studio/"><bdi>ArcLogic Studio</bdi></a>.</p>
+
+      <div class="foot">© 2026 <bdi>DoublePixel</bdi> (בר שגיב) · <a href="mailto:barsagivv@gmail.com">barsagivv@gmail.com</a></div>
+    </div>
+  </div>
+</body>
+</html>
