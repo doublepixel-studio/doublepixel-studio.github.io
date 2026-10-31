@@ -32,6 +32,6 @@ change afterwards, so pick the folder name once and leave it alone.
 
 | Game | Privacy policy | Terms |
 |---|---|---|
-| (none yet) | | |
+| RouteBots (`com.doublepixel.routebots`) | <https://doublepixel-studio.github.io/routebots/privacy-policy.html> | none (no accounts or purchases) |
 
 Games published before 2026-10-23 keep their pages at <https://barsagivv.github.io/arclogic-studio/>.
