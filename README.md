@@ -28,6 +28,16 @@ change afterwards, so pick the folder name once and leave it alone.
 
     google.com, pub-8111779805371074, DIRECT, f08c47fec0942fa0
 
+## games.json: the "More games" list in every game
+
+`games.json` at the root is the one live list of the studio's games that every game shows in its
+Settings ("More games"), with each game's icon in `games/icons/<key>.png` (square PNG, 256x256,
+under 60 KB). The games read <https://doublepixel-studio.github.io/games.json> and fall back to a
+copy bundled in each build, so adding, removing or changing a game here needs no game release.
+Data only, never code. A platform block (`android`, `ios`) is present only while the game is live
+in that store. How to edit it and how to check it afterwards: the studio repo's
+`.claude/skills/more-games/SKILL.md` (`doublepixel-studio/studio`).
+
 ## Live URLs
 
 | Game | Privacy policy | Terms |

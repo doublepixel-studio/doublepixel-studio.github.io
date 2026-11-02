@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "updated": "2026-11-02",
+  "games": [
+    {
+      "key": "quack-blast",
+      "order": 1,
+      "name": { "en": "Quack Blast: Block Puzzle", "he": "קוואק בלאסט: פאזל בלוקים" },
+      "tagline": { "en": "Fit the blocks, clear the lines, save the duck", "he": "מסדרים בלוקים, מנקים שורות ומצילים את הברווז" },
+      "icon": "https://doublepixel-studio.github.io/games/icons/quack-blast.png",
+      "android": { "package": "com.barsagiv.quackblast", "url": "https://play.google.com/store/apps/details?id=com.barsagiv.quackblast" }
+    },
+    {
+      "key": "idle-rails",
+      "order": 2,
+      "name": { "en": "Idle Rails: World Tour", "he": "אידל ריילס: מסע עולמי" },
+      "tagline": { "en": "Build a railway empire around the world", "he": "בונים אימפריית רכבות מסביב לעולם" },
+      "icon": "https://doublepixel-studio.github.io/games/icons/idle-rails.png",
+      "android": { "package": "com.barsagiv.railworld", "url": "https://play.google.com/store/apps/details?id=com.barsagiv.railworld" },
+      "ios": { "appId": "6811182187", "url": "https://apps.apple.com/app/id6811182187" }
+    },
+    {
+      "key": "crowd-runner",
+      "order": 3,
+      "name": { "en": "Crowd Runner: Army Clash", "he": "קראוד ראנר: קרב צבאות" },
+      "tagline": { "en": "Grow your crowd and win the clash", "he": "מגדלים צבא ומנצחים בקרב" },
+      "icon": "https://doublepixel-studio.github.io/games/icons/crowd-runner.png",
+      "android": { "package": "com.bars.crowdrunner", "url": "https://play.google.com/store/apps/details?id=com.bars.crowdrunner" },
+      "ios": { "appId": "6807421281", "url": "https://apps.apple.com/app/id6807421281" }
+    },
+    {
+      "key": "sudoku-world-league",
+      "order": 4,
+      "name": { "en": "Sudoku World League", "he": "ליגת הסודוקו העולמית" },
+      "tagline": { "en": "Sudoku against players around the world", "he": "סודוקו מול שחקנים מכל העולם" },
+      "icon": "https://doublepixel-studio.github.io/games/icons/sudoku-world-league.png",
+      "ios": { "appId": "6761337529", "url": "https://apps.apple.com/app/id6761337529" }
+    }
+  ]
+}
