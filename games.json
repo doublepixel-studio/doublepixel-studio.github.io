@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-11-02",
+  "updated": "2026-11-06",
   "games": [
     {
       "key": "quack-blast",
@@ -35,6 +35,14 @@
       "tagline": { "en": "Sudoku against players around the world", "he": "סודוקו מול שחקנים מכל העולם" },
       "icon": "https://doublepixel-studio.github.io/games/icons/sudoku-world-league.png",
       "ios": { "appId": "6761337529", "url": "https://apps.apple.com/app/id6761337529" }
+    },
+    {
+      "key": "lure-line",
+      "order": 5,
+      "name": { "en": "Lure Line: Fishing Puzzle", "he": "לור ליין: פאזל דיג" },
+      "tagline": { "en": "Draw one line, hook every fish", "he": "קו אחד, וכל הדגים על החכה" },
+      "icon": "https://doublepixel-studio.github.io/games/icons/lure-line.png",
+      "ios": { "appId": "6822671567", "url": "https://apps.apple.com/app/id6822671567" }
     }
   ]
 }
