@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How the mobile game Toy Flyers handles information.">
+<title>Toy Flyers – Privacy Policy</title>
+<style>
+  :root{--sky:#123A7A;--sky2:#2C6FD6;--sun:#FFC23D;--coral:#FF6B4A;--paper:#F5F9FF;
+        --ink:#0F2347;--text:#2B3F63;--muted:#5A6B8C;--link:#1A5FD0;--line:#E1E8F5}
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(160deg,#EAF2FD,#DCE7F8);color:var(--ink);
+       font:16px/1.7 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:34px 16px}
+  .card{max-width:780px;margin:0 auto 28px;background:#FFFFFF;border-radius:22px;overflow:hidden;
+        box-shadow:0 16px 46px rgba(15,35,71,.16)}
+  .hero{background:linear-gradient(135deg,var(--sky),var(--sky2));color:var(--paper);padding:36px 36px 30px;
+        border-bottom:4px solid var(--sun)}
+  .hero h1{margin:0;font-size:28px;letter-spacing:.2px}
+  .hero .sub{margin-top:8px;font-size:14px;color:var(--sun)}
+  .hero .switch{margin-top:12px;font-size:14px}
+  .hero .switch a{color:var(--paper);text-decoration:underline}
+  .body{padding:26px 36px 34px}
+  .body h2{font-size:18px;margin:28px 0 6px;color:var(--ink);border-inline-start:4px solid var(--coral);padding-inline-start:11px}
+  .body p,.body li{color:var(--text)}
+  .body ul{padding-inline-start:22px}
+  .note{background:#FFF7E6;border:1px solid #FBE3B0;border-radius:14px;padding:14px 18px;margin:18px 0}
+  .note ul{margin:6px 0 0}
+  a{color:var(--link);overflow-wrap:anywhere}
+  .foot{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+  @media (max-width:560px){body{padding:20px 16px}.hero{padding:28px 22px 24px}.hero h1{font-size:24px}.body{padding:20px 22px 28px}}
+</style>
+</head>
+<body>
+
+<div class="card" id="en" lang="en" dir="ltr">
+  <div class="hero">
+    <h1>Privacy Policy</h1>
+    <div class="sub">Toy Flyers · DoublePixel · Last updated 9 November 2026</div>
+    <div class="switch"><a href="#he">עברית ↓</a></div>
+  </div>
+  <div class="body">
+    <p>This policy explains what information the mobile game <strong>Toy Flyers</strong> (the "Game",
+      <code>com.doublepixel.toyflyers</code>), an online racing game of small flying toys, uses, why, and what you can do
+      about it. The Game is made and published by Bar Sagiv, an independent developer in Israel, under the studio name
+      <strong>DoublePixel</strong> ("we", "us"); shown on Google Play as <strong>ArcLogic Studio</strong> and on the
+      App Store as <strong>Bar Sagiv</strong>. All three names are the same publisher. Bar Sagiv is responsible for
+      this information (its "controller" under data-protection law). Questions:
+      <a href="mailto:barsagivv@gmail.com">barsagivv@gmail.com</a>.</p>
+
+    <div class="note">
+      <strong>In short</strong>
+      <ul>
+        <li>You play as a guest with an anonymous account. Signing in with Google or Apple is optional and keeps your
+          progress.</li>
+        <li>Other players see only your public profile, with the nickname you choose. There is no chat: only six
+          preset emoji faces.</li>
+        <li>Ads come from Google AdMob. Your advertising ID is used only with your consent.</li>
+        <li>Payments go through the App Store or Google Play. We never see your card.</li>
+        <li>We do not sell your data.</li>
+        <li>Settings &rarr; Account &rarr; Delete account deletes everything at once.</li>
+      </ul>
+    </div>
+
+    <h2>1. Your game account</h2>
+    <p>The Game signs you in as a guest with <strong>Firebase Authentication</strong> (Google), which creates an
+      anonymous account with a random account id. No email, password or real name is needed.</p>
+    <p><strong>Sign in with Google or Sign in with Apple (optional).</strong> You can connect your account to Google or
+      Apple to keep your progress. We then receive your account id at that provider and the email address and name that
+      the provider shares with us. We use them only to sign you in and keep your progress. The Game never shows them to
+      other players: it shows only a nickname that you choose.</p>
+
+    <h2>2. What our server stores</h2>
+    <p>Our server is Firebase Realtime Database and Cloud Functions, in Google Cloud's <strong>europe-west1</strong>
+      region (Belgium). Linked to your account id, it stores:</p>
+    <ul>
+      <li><strong>Cloud save:</strong> your game progress.</li>
+      <li><strong>Public profile:</strong> your nickname, your flyer, your trophies, your arena, a country code taken
+        from your device's region setting, and when you were last seen. Other players can see it.</li>
+      <li><strong>Leaderboards and the weekly league:</strong> your scores and places.</li>
+      <li><strong>Friends:</strong> your friends list and your friend code.</li>
+      <li><strong>Online presence:</strong> whether you are online, while the Game is open.</li>
+      <li><strong>Races:</strong> your presses during a live race, which the other racers receive, and race replays
+        that are shared with other players.</li>
+    </ul>
+    <p>There is no chat and no free text between players: during a race you can send only one of six preset emoji
+      faces.</p>
+
+    <h2>3. Notifications</h2>
+    <p>The Game uses <strong>Firebase Cloud Messaging</strong> to send push notifications about friend requests and
+      race invites. For this it keeps a device token, a random id for your phone's notifications. You can turn
+      notifications off at any time in your phone's settings.</p>
+
+    <h2>4. Advertising</h2>
+    <p>The Game shows ads from <strong>Google AdMob</strong>: rewarded ads that you choose to watch, and ads shown
+      between races. Players who have bought anything in the Game never see ads they did not choose.</p>
+    <ul>
+      <li>The Game asks for your consent with Google's consent message (Google's User Messaging Platform). Your
+        advertising ID (on Android the advertising ID, on iPhone the IDFA) is used only with your consent.</li>
+      <li>On iPhone, the IDFA is used only if you also allow tracking when the Game asks (App Tracking Transparency).
+        If you say no, the Game works the same.</li>
+      <li>AdMob may also collect your IP address and the approximate location it shows (not GPS), information about
+        your device and the app, and which ads were shown and tapped, with diagnostics. Google uses this to show and
+        measure ads and to prevent fraud.</li>
+    </ul>
+
+    <h2>5. Purchases</h2>
+    <p>In-app purchases are optional and go through the <strong>App Store</strong> or <strong>Google Play</strong>.
+      We never see your card or payment details. Our server checks the store's transaction id for each purchase and
+      keeps it, so that the same purchase cannot be used twice.</p>
+
+    <h2>6. Analytics</h2>
+    <p>The Game uses <strong>Firebase Analytics</strong> (Google Analytics for Firebase) to understand how the Game is
+      played: app usage events, information about your device, and an app instance id.</p>
+
+    <h2>7. Why we use it</h2>
+    <ul>
+      <li>To run the Game and its online features (account, cloud save, profile, leaderboards, league, friends, races,
+        notifications): to provide the Game you asked for (our agreement with you, the
+        <a href="terms.html">Terms of Use</a>).</li>
+      <li>To keep purchases fair and the service secure: our legitimate interest.</li>
+      <li>To show ads that keep the Game free: your consent for the advertising ID; otherwise our legitimate
+        interest.</li>
+      <li>To improve the Game with analytics: our legitimate interest, or your consent where the law requires it.</li>
+    </ul>
+
+    <h2>8. Who receives it</h2>
+    <p>We share information only with the services that run the Game for us: Google (Firebase Authentication, Firebase
+      Realtime Database, Cloud Functions, Firebase Cloud Messaging, Firebase Analytics, AdMob, Google Play, Sign in with
+      Google) and Apple (App Store, App Tracking Transparency, Sign in with Apple). Other players see your public
+      profile, your scores and places, your race presses and the replays that are shared. We may also disclose
+      information when the law requires it. <strong>We do not sell your data.</strong> Their own policies:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+      <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a></li>
+      <li><a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a></li>
+      <li><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></li>
+    </ul>
+
+    <h2>9. Where it is stored</h2>
+    <p>Our server's data is stored in Google Cloud's europe-west1 region (Belgium). Google and Apple may also process
+      data in other countries under their own data-protection terms. We run the Game from Israel.</p>
+
+    <h2>10. How long we keep it</h2>
+    <p>We keep your data until your account is deleted. If you play as a guest, never sign in, and uninstall the Game,
+      your guest account cannot be opened again and its data stays on our server, unreadable to anyone through the
+      Game, until you ask us to delete it (section 11).</p>
+
+    <h2>11. Deleting your data</h2>
+    <p>In the Game: <strong>Settings &rarr; Account &rarr; Delete account</strong> deletes your account and all its data
+      at once. Or email <a href="mailto:barsagivv@gmail.com">barsagivv@gmail.com</a> with the friend code shown in your
+      profile, and we delete it within 30 days. Details: <a href="delete-account.html">Delete your account and
+      data</a>.</p>
+
+    <h2>12. Your rights</h2>
+    <p>You can ask us to see, correct or delete your information, and, where the law gives you these rights (for
+      example under the GDPR), to restrict or object to its use, to receive a copy, and to withdraw consent at any
+      time. You can also complain to your data protection authority (in Israel, the Privacy Protection Authority).
+      Email <a href="mailto:barsagivv@gmail.com">barsagivv@gmail.com</a> with your friend code; we reply within 30
+      days.</p>
+
+    <h2>13. Children</h2>
+    <p>The Game is not directed at children under 13, and we do not knowingly collect personal information from them.
+      If you believe a child under 13 has used the Game, email us and we will delete the data.</p>
+
+    <h2>14. Security</h2>
+    <p>Data sent between the Game and our server is encrypted in transit (HTTPS). No system is perfectly secure, but we
+      work to protect your information.</p>
+
+    <h2>15. Changes to this policy</h2>
+    <p>If this policy changes, the new version will be posted at this address with a new "Last updated" date.</p>
+
+    <h2>16. Contact</h2>
+    <p>DoublePixel (Bar Sagiv; shown on Google Play as ArcLogic Studio and on the App Store as Bar Sagiv) ·
+      <a href="mailto:barsagivv@gmail.com">barsagivv@gmail.com</a></p>
+
+    <div class="foot">© 2026 DoublePixel · <a href="./">Toy Flyers</a> · <a href="terms.html">Terms of Use</a> ·
+      <a href="delete-account.html">Delete your account</a> · <a href="../">Studio home</a></div>
+  </div>
+</div>
+
+<div class="card" id="he" lang="he" dir="rtl">
+  <div class="hero">
+    <h1>מדיניות פרטיות</h1>
+    <div class="sub"><bdi>Toy Flyers</bdi> · <bdi>DoublePixel</bdi> · עודכן לאחרונה ב-9 בנובמבר 2026</div>
+    <div class="switch"><a href="#en">English ↑</a></div>
+  </div>
+  <div class="body">
+    <p>המדיניות הזו מסבירה באיזה מידע משתמש משחק המובייל <strong><bdi>Toy Flyers</bdi></strong> ("המשחק",
+      <bdi><code>com.doublepixel.toyflyers</code></bdi>), משחק מרוצים מקוון של צעצועים מעופפים קטנים, למה, ומה אפשר לעשות
+      בנושא. את המשחק פיתח ומפרסם בר שגיב, מפתח עצמאי בישראל, תחת שם הסטודיו <strong><bdi>DoublePixel</bdi></strong>
+      ("אנחנו"); ב-<bdi>Google Play</bdi> הוא מופיע בשם <strong><bdi>ArcLogic Studio</bdi></strong> וב-<bdi>App Store</bdi>
+      בשם <strong><bdi>Bar Sagiv</bdi></strong>. שלושת השמות הם אותו מפרסם. בר שגיב אחראי למידע הזה ("בעל השליטה" לפי
+      דיני הגנת המידע). שאלות: <a href="mailto:barsagivv@gmail.com">barsagivv@gmail.com</a>.</p>
+
+    <div class="note">
+      <strong>בקצרה</strong>
+      <ul>
+        <li>משחקים כאורחים עם חשבון אנונימי. התחברות עם <bdi>Google</bdi> או <bdi>Apple</bdi> היא לבחירתכם ושומרת את
+          ההתקדמות.</li>
+        <li>שחקנים אחרים רואים רק את הפרופיל הציבורי שלכם, עם הכינוי שבחרתם. אין צ'אט: רק שישה פרצופי אימוג'י
+          קבועים.</li>
+        <li>הפרסומות מגיעות מ-<bdi>Google AdMob</bdi>. נעשה שימוש במזהה הפרסום שלכם רק בהסכמתכם.</li>
+        <li>התשלומים עוברים דרך <bdi>App Store</bdi> או <bdi>Google Play</bdi>. אנחנו אף פעם לא רואים את הכרטיס
+          שלכם.</li>
+        <li>אנחנו לא מוכרים את המידע שלכם.</li>
+        <li>הגדרות &larr; חשבון &larr; מחיקת החשבון מוחק הכול בבת אחת.</li>
+      </ul>
+    </div>
+
+    <h2>1. חשבון המשחק שלכם</h2>
+    <p>המשחק מחבר אתכם כאורחים דרך <strong><bdi>Firebase Authentication</bdi></strong> (<bdi>Google</bdi>), שיוצר
+      חשבון אנונימי עם מזהה חשבון אקראי. לא צריך אימייל, סיסמה או שם אמיתי.</p>
+    <p><strong>התחברות עם <bdi>Google</bdi> או עם <bdi>Apple</bdi> (לבחירתכם).</strong> אפשר לחבר את החשבון
+      ל-<bdi>Google</bdi> או ל-<bdi>Apple</bdi> כדי לשמור את ההתקדמות. אז אנחנו מקבלים את מזהה החשבון שלכם אצל אותו
+      ספק, ואת כתובת האימייל והשם שהספק משתף איתנו. אנחנו משתמשים בהם רק כדי לחבר אתכם ולשמור את ההתקדמות. המשחק אף
+      פעם לא מציג אותם לשחקנים אחרים: הוא מציג רק כינוי שאתם בוחרים.</p>
+
+    <h2>2. מה השרת שלנו שומר</h2>
+    <p>השרת שלנו הוא <bdi>Firebase Realtime Database</bdi> ו-<bdi>Cloud Functions</bdi>, באזור
+      <strong><bdi>europe-west1</bdi></strong> של <bdi>Google Cloud</bdi> (בלגיה). בקישור למזהה החשבון שלכם הוא
+      שומר:</p>
+    <ul>
+      <li><strong>גיבוי בענן:</strong> ההתקדמות שלכם במשחק.</li>
+      <li><strong>פרופיל ציבורי:</strong> הכינוי, המעופף שלכם, הגביעים, הזירה, קוד מדינה שנלקח מהגדרת האזור במכשיר,
+        ומתי נראיתם לאחרונה. שחקנים אחרים יכולים לראות אותו.</li>
+      <li><strong>טבלאות המובילים והליגה השבועית:</strong> התוצאות והמקומות שלכם.</li>
+      <li><strong>חברים:</strong> רשימת החברים וקוד החבר שלכם.</li>
+      <li><strong>נוכחות ברשת:</strong> האם אתם מחוברים, כל עוד המשחק פתוח.</li>
+      <li><strong>מרוצים:</strong> הלחיצות שלכם במהלך מרוץ חי, שהמתחרים האחרים מקבלים, והקלטות מרוצים ששותפו עם
+        שחקנים אחרים.</li>
+    </ul>
+    <p>אין צ'אט ואין טקסט חופשי בין שחקנים: במהלך מרוץ אפשר לשלוח רק אחד משישה פרצופי אימוג'י קבועים.</p>
+
+    <h2>3. התראות</h2>
+    <p>המשחק משתמש ב-<strong><bdi>Firebase Cloud Messaging</bdi></strong> כדי לשלוח התראות על בקשות חברות והזמנות
+      למרוץ. לשם כך הוא שומר אסימון מכשיר, מזהה אקראי להתראות של הטלפון. אפשר לכבות את ההתראות בכל עת בהגדרות
+      הטלפון.</p>
+
+    <h2>4. פרסומות</h2>
+    <p>המשחק מציג פרסומות מ-<strong><bdi>Google AdMob</bdi></strong>: פרסומות עם פרס שאתם בוחרים לצפות בהן, ופרסומות
+      בין מרוצים. שחקנים שקנו משהו במשחק אף פעם לא רואים פרסומות שלא בחרו בהן.</p>
+    <ul>
+      <li>המשחק מבקש את הסכמתכם בהודעת ההסכמה של <bdi>Google</bdi> (<bdi>User Messaging Platform</bdi>). נעשה שימוש
+        במזהה הפרסום שלכם (באנדרואיד מזהה הפרסום, באייפון ה-<bdi>IDFA</bdi>) רק בהסכמתכם.</li>
+      <li>באייפון, נעשה שימוש ב-<bdi>IDFA</bdi> רק אם גם אישרתם מעקב כשהמשחק שואל (<bdi>App Tracking
+        Transparency</bdi>). אם תסרבו, המשחק עובד אותו דבר.</li>
+      <li><bdi>AdMob</bdi> עשויה לאסוף גם את כתובת ה-<bdi>IP</bdi> שלכם ואת המיקום המשוער שעולה ממנה (לא
+        <bdi>GPS</bdi>), מידע על המכשיר והאפליקציה, ואילו פרסומות הוצגו ונלחצו, עם נתוני אבחון. <bdi>Google</bdi>
+        משתמשת בזה כדי להציג ולמדוד פרסומות ולמנוע הונאות.</li>
+    </ul>
+
+    <h2>5. רכישות</h2>
+    <p>רכישות בתוך האפליקציה הן לבחירתכם ועוברות דרך <strong><bdi>App Store</bdi></strong> או <strong><bdi>Google
+      Play</bdi></strong>. אנחנו אף פעם לא רואים את הכרטיס או את פרטי התשלום שלכם. השרת שלנו בודק את מזהה העסקה של
+      החנות לכל רכישה ושומר אותו, כדי שלא יהיה אפשר להשתמש באותה רכישה פעמיים.</p>
+
+    <h2>6. אנליטיקה</h2>
+    <p>המשחק משתמש ב-<strong><bdi>Firebase Analytics</bdi></strong> (<bdi>Google Analytics for Firebase</bdi>) כדי להבין
+      איך משחקים בו: אירועי שימוש באפליקציה, מידע על המכשיר, ומזהה של עותק האפליקציה (<bdi>app instance id</bdi>).</p>
+
+    <h2>7. למה אנחנו משתמשים במידע</h2>
+    <ul>
+      <li>כדי להפעיל את המשחק והתכונות המקוונות שלו (חשבון, גיבוי בענן, פרופיל, טבלאות מובילים, ליגה, חברים, מרוצים,
+        התראות): כדי לספק את המשחק שביקשתם (ההסכם בינינו, <a href="terms.html#he">תנאי השימוש</a>).</li>
+      <li>כדי לשמור על רכישות הוגנות ועל אבטחת השירות: האינטרס הלגיטימי שלנו.</li>
+      <li>כדי להציג פרסומות שמשאירות את המשחק חינמי: הסכמתכם לשימוש במזהה הפרסום; אחרת, האינטרס הלגיטימי שלנו.</li>
+      <li>כדי לשפר את המשחק בעזרת אנליטיקה: האינטרס הלגיטימי שלנו, או הסכמתכם כשהחוק דורש.</li>
+    </ul>
+
+    <h2>8. מי מקבל את המידע</h2>
+    <p>אנחנו משתפים מידע רק עם השירותים שמפעילים את המשחק עבורנו: <bdi>Google</bdi> (<bdi>Firebase
+      Authentication</bdi>, <bdi>Firebase Realtime Database</bdi>, <bdi>Cloud Functions</bdi>, <bdi>Firebase Cloud
+      Messaging</bdi>, <bdi>Firebase Analytics</bdi>, <bdi>AdMob</bdi>, <bdi>Google Play</bdi>, התחברות עם
+      <bdi>Google</bdi>) ו-<bdi>Apple</bdi> (<bdi>App Store</bdi>, <bdi>App Tracking Transparency</bdi>, התחברות עם
+      <bdi>Apple</bdi>). שחקנים אחרים רואים את הפרופיל הציבורי שלכם, את התוצאות והמקומות שלכם, את הלחיצות שלכם במרוץ
+      ואת ההקלטות ששותפו. ייתכן שנמסור מידע גם כשהחוק מחייב. <strong>אנחנו לא מוכרים את המידע שלכם.</strong> המדיניות
+      שלהם:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy">מדיניות הפרטיות של <bdi>Google</bdi></a></li>
+      <li><a href="https://policies.google.com/technologies/partner-sites">איך <bdi>Google</bdi> משתמשת במידע מאפליקציות שמשתמשות בשירותים שלה</a></li>
+      <li><a href="https://firebase.google.com/support/privacy">פרטיות ואבטחה ב-<bdi>Firebase</bdi></a></li>
+      <li><a href="https://www.apple.com/legal/privacy/">מדיניות הפרטיות של <bdi>Apple</bdi></a></li>
+    </ul>
+
+    <h2>9. איפה המידע נשמר</h2>
+    <p>המידע בשרת שלנו נשמר באזור <bdi>europe-west1</bdi> של <bdi>Google Cloud</bdi> (בלגיה). <bdi>Google</bdi>
+      ו-<bdi>Apple</bdi> עשויות לעבד מידע גם במדינות אחרות לפי תנאי הגנת המידע שלהן. אנחנו מפעילים את המשחק
+      מישראל.</p>
+
+    <h2>10. כמה זמן אנחנו שומרים</h2>
+    <p>אנחנו שומרים את המידע שלכם עד שהחשבון נמחק. אם שיחקתם כאורחים, אף פעם לא התחברתם, ומחקתם את המשחק, אי אפשר
+      לפתוח שוב את חשבון האורח, והמידע שלו נשאר בשרת שלנו, בלי שאף אחד יכול לקרוא אותו דרך המשחק, עד שתבקשו מאיתנו
+      למחוק אותו (סעיף 11).</p>
+
+    <h2>11. מחיקת המידע</h2>
+    <p>במשחק: <strong>הגדרות &larr; חשבון &larr; מחיקת החשבון</strong> מוחק את החשבון ואת כל המידע שלו בבת אחת. או
+      כתבו ל-<a href="mailto:barsagivv@gmail.com">barsagivv@gmail.com</a> עם קוד החבר שמופיע בפרופיל שלכם, ואנחנו
+      נמחק אותו תוך 30 יום. פרטים: <a href="delete-account.html#he">מחיקת החשבון והמידע</a>.</p>
+
+    <h2>12. הזכויות שלכם</h2>
+    <p>אפשר לבקש מאיתנו לעיין במידע שלכם, לתקן או למחוק אותו, ובמקום שהחוק נותן את הזכויות האלה (למשל לפי
+      ה-<bdi>GDPR</bdi>), גם להגביל את השימוש בו או להתנגד לו, לקבל עותק שלו, ולבטל הסכמה בכל עת. אפשר גם להתלונן
+      לרשות להגנת המידע במדינה שלכם (בישראל, הרשות להגנת הפרטיות). כתבו ל-<a
+      href="mailto:barsagivv@gmail.com">barsagivv@gmail.com</a> עם קוד החבר שלכם; אנחנו עונים תוך 30 יום.</p>
+
+    <h2>13. ילדים</h2>
+    <p>המשחק לא מיועד לילדים מתחת לגיל 13, ואנחנו לא אוספים ביודעין מידע אישי מהם. אם אתם חושבים שילד מתחת לגיל 13
+      השתמש במשחק, כתבו לנו ונמחק את המידע.</p>
+
+    <h2>14. אבטחה</h2>
+    <p>המידע שעובר בין המשחק לשרת שלנו מוצפן בהעברה (<bdi>HTTPS</bdi>). אין מערכת מאובטחת לחלוטין, אבל אנחנו
+      פועלים כדי להגן על המידע שלכם.</p>
+
+    <h2>15. שינויים במדיניות</h2>
+    <p>אם המדיניות תשתנה, הגרסה החדשה תפורסם בכתובת הזו עם תאריך "עודכן לאחרונה" חדש.</p>
+
+    <h2>16. יצירת קשר</h2>
+    <p><bdi>DoublePixel</bdi> (בר שגיב; מופיע ב-<bdi>Google Play</bdi> בשם <bdi>ArcLogic Studio</bdi> וב-<bdi>App
+      Store</bdi> בשם <bdi>Bar Sagiv</bdi>) · <a href="mailto:barsagivv@gmail.com">barsagivv@gmail.com</a></p>
+
+    <div class="foot">© 2026 <bdi>DoublePixel</bdi> · <a href="./#he"><bdi>Toy Flyers</bdi></a> · <a
+      href="terms.html#he">תנאי שימוש</a> · <a href="delete-account.html#he">מחיקת החשבון</a> · <a href="../#he">דף
+      הסטודיו</a></div>
+  </div>
+</div>
+
+</body>
+</html>

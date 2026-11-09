@@ -17,6 +17,7 @@ One folder per game, one page per document:
     <game-slug>/privacy-policy.html
     <game-slug>/terms.html            (if the game has terms)
     <game-slug>/delete-account.html   (if the game has accounts)
+    <game-slug>/index.html            (support page, if the game has one)
 
 then add a card to `index.html` and a row below. The URL a store has been given must never
 change afterwards, so pick the folder name once and leave it alone.
@@ -42,6 +43,7 @@ in that store. How to edit it and how to check it afterwards: the studio repo's
 
 | Game | Privacy policy | Terms |
 |---|---|---|
+| Toy Flyers (`com.doublepixel.toyflyers`) | <https://doublepixel-studio.github.io/toyflyers/privacy-policy.html> | <https://doublepixel-studio.github.io/toyflyers/terms.html> (support page <https://doublepixel-studio.github.io/toyflyers/>, account deletion <https://doublepixel-studio.github.io/toyflyers/delete-account.html>; Play Data safety: `play-forms/data-safety-toyflyers.csv`) |
 | RouteBots (`com.doublepixel.routebots`) | <https://doublepixel-studio.github.io/routebots/privacy-policy.html> | none (no accounts or purchases) |
 
 Games published before 2026-10-23 keep their pages at <https://barsagivv.github.io/arclogic-studio/>.
