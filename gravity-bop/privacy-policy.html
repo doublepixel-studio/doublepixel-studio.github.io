@@ -74,7 +74,7 @@
     <h2>1. On your phone</h2>
     <p>The Game saves your progress on your device: levels cleared, Gravity Shards, coins, the items you unlocked or
       bought, missions and achievements, and your settings. This save stays in the app's private storage. The Game
-      does not back it up, and it is deleted when you uninstall the Game. Settings &rarr; Reset progress erases your
+      does not back it up, and it is deleted when you uninstall the Game. Settings &rarr; RESET PROGRESS erases your
       level progress at any time.</p>
 
     <h2>2. Your online account</h2>
@@ -109,8 +109,9 @@
 
     <h2>6. Advertising</h2>
     <p>The Game shows ads through <strong>Google AdMob</strong> (Google Mobile Ads SDK): short videos you choose to
-      watch for a reward, and full-screen ads at breaks between levels and runs: never during play, never in the
-      first five levels, and at most one every 120 seconds. The <strong>NO ADS</strong> purchase removes the
+      watch for a reward, and full-screen ads at some breaks between levels and between runs. Full-screen ads never
+      appear during play or in the first five levels, and there is always a minimum time between two of them; we may
+      adjust how often they appear. The <strong>NO ADS</strong> purchase removes the
       full-screen ads; the optional reward videos stay available.</p>
     <ul>
       <li>To show and measure ads and prevent fraud, Google may collect device and usage data, such as your
@@ -125,8 +126,9 @@
         information for ads. Where these rules apply, you can change your choice at any time in
         <strong>Settings &rarr; AD PRIVACY</strong>. If you do not consent, ads may still be shown without
         personalization.</li>
-      <li>Google's consent message lists the ad partners Google works with. Some of them say they may use precise
-        location data; they may do so only if you consent to them in that message.</li>
+      <li>The Game never asks for permission to use your location, so neither the Game nor Google's ad SDK can read
+        your phone's precise (GPS) location. The only location involved is the approximate one Google may estimate
+        from your IP address, described above.</li>
     </ul>
 
     <h2>7. Analytics and crash reports</h2>
@@ -134,7 +136,9 @@
       receives anonymous gameplay events (for example a level started or completed, a screen used, an error as a short
       code), the app version, your phone's operating system and its version, the language setting, and a random
       session id that changes after an hour without play. It receives no device or advertising identifiers and no
-      personal data, and it is not linked to your online account.</p>
+      personal data, and it is not linked to your online account. Aptabase's server works out your country and
+      region from your IP address and uses the IP address, with a key that changes every day, to count daily players
+      anonymously; it does not store your IP address. Aptabase keeps this analytics data for up to five years.</p>
     <p>If you allowed your phone to share diagnostics with app developers, Apple or Google Play may also give us
       anonymous, aggregated crash and performance statistics under their own policies.</p>
 
@@ -204,13 +208,17 @@
     <p>You can ask us to see, correct or delete your information, and, where the law gives you these rights (for
       example under the GDPR), to restrict or object to its use, to receive a copy, and to withdraw consent at any
       time. You can also complain to your data protection authority (in Israel, the Privacy Protection Authority).
-      Email <a href="mailto:doublepixel26@gmail.com">doublepixel26@gmail.com</a>; we reply within 30 days. Because your
+      Email <a href="mailto:doublepixel26@gmail.com">doublepixel26@gmail.com</a>; we reply within one month, the time data-protection laws such as the GDPR allow.
+      Because your
       online account is anonymous, the in-game options are the surest way to act on your own online data.</p>
 
     <h2>16. Children</h2>
-    <p>Gravity Bop is a general-audience game and is not directed at children. We do not knowingly collect personal
-      information from children under 13. If you believe a child under 13 has used the Game's online features, use
-      Settings &rarr; DELETE ONLINE ACCOUNT on that phone, or email us.</p>
+    <p>Gravity Bop is made for a general audience. It is not directed at children, it is not in the App Store's Kids
+      category, and its ads are not set up as ads for children. The Game never asks for a player's age, name, email or
+      any contact details, and we do not knowingly collect personal information from children under 13 (or under the
+      age set by the law of their country). The Game's age rating describes its content, not who it is made for. If
+      you are a parent or guardian and believe your child used the Game's online features, use
+      Settings &rarr; DELETE ONLINE ACCOUNT on that phone, or email us and we will help.</p>
 
     <h2>17. Security</h2>
     <p>Data sent between the Game and our server is encrypted in transit (HTTPS). No system is perfectly secure, but we
@@ -266,8 +274,7 @@
     <h2>1. בטלפון שלכם</h2>
     <p>המשחק שומר את ההתקדמות שלכם במכשיר: שלבים שעברתם, <bdi>Gravity Shards</bdi>, מטבעות, הפריטים שפתחתם או
       קניתם, משימות והישגים, וההגדרות שלכם. השמירה נשארת באחסון הפרטי של האפליקציה. המשחק לא מגבה אותה, והיא נמחקת
-      כשמסירים את המשחק. אפשר למחוק את ההתקדמות בשלבים בכל רגע דרך <bdi>Settings</bdi> &larr; <bdi>Reset
-      progress</bdi>.</p>
+      כשמסירים את המשחק. אפשר למחוק את ההתקדמות בשלבים בכל רגע דרך <bdi>Settings</bdi> &larr; <bdi>RESET PROGRESS</bdi>.</p>
 
     <h2>2. החשבון המקוון שלכם</h2>
     <p>כשמשתמשים בתכונות מקוונות, המשחק יוצר אוטומטית חשבון אנונימי ב-<strong><bdi>Firebase
@@ -302,8 +309,9 @@
 
     <h2>6. פרסומות</h2>
     <p>המשחק מציג פרסומות באמצעות <strong><bdi>Google AdMob</bdi></strong> (<bdi>Google Mobile Ads SDK</bdi>):
-      סרטונים קצרים שבוחרים לצפות בהם תמורת פרס, ופרסומות במסך מלא בהפסקות בין שלבים וריצות: אף פעם לא באמצע משחק,
-      אף פעם לא בחמשת השלבים הראשונים, ולכל היותר אחת בכל 120 שניות. הרכישה <strong><bdi>NO ADS</bdi></strong>
+      סרטונים קצרים שבוחרים לצפות בהם תמורת פרס, ופרסומות במסך מלא בחלק מההפסקות בין שלבים ובין ריצות. פרסומות במסך
+      מלא אף פעם לא מופיעות באמצע משחק או בחמשת השלבים הראשונים, ותמיד יש זמן מינימלי בין שתיים מהן; ייתכן שנשנה את
+      התדירות שבה הן מופיעות. הרכישה <strong><bdi>NO ADS</bdi></strong>
       מסירה את הפרסומות במסך מלא; סרטוני הפרס שלבחירתכם נשארים זמינים.</p>
     <ul>
       <li>כדי להציג ולמדוד פרסומות ולמנוע הונאות, <bdi>Google</bdi> עשויה לאסוף מידע על המכשיר והשימוש, כמו מיקום
@@ -318,15 +326,19 @@
         שהמידע שלכם לא "יימכר" או "ישותף" לצורכי פרסום. במקומות שבהם הכללים האלה חלים, אפשר לשנות את הבחירה בכל עת
         ב-<strong><bdi>Settings</bdi> &larr; <bdi>AD PRIVACY</bdi></strong>. גם בלי הסכמה עשויות להופיע פרסומות לא
         מותאמות אישית.</li>
-      <li>הודעת ההסכמה של <bdi>Google</bdi> מפרטת את שותפי הפרסום ש-<bdi>Google</bdi> עובדת איתם. חלקם מציינים שהם
-        עשויים להשתמש במידע מיקום מדויק; הם רשאים לעשות זאת רק אם הסכמתם להם בהודעה הזו.</li>
+      <li>המשחק אף פעם לא מבקש הרשאה להשתמש במיקום שלכם, ולכן לא המשחק ולא ערכת הפרסום של <bdi>Google</bdi> יכולים
+        לקרוא את המיקום המדויק (<bdi>GPS</bdi>) של הטלפון. המיקום היחיד שמעורב הוא המיקום המשוער ש-<bdi>Google</bdi>
+        עשויה להעריך לפי כתובת ה-<bdi>IP</bdi>, כמתואר למעלה.</li>
     </ul>
 
     <h2>7. אנליטיקה ודיווחי קריסה</h2>
     <p>המשחק משתמש ב-<strong><bdi>Aptabase</bdi></strong>, אנליטיקה ששמה את הפרטיות במקום הראשון, כדי להבין איך
       משחקים בו. הוא מקבל אירועי משחק אנונימיים (למשל שלב שהתחיל או הושלם, מסך שהיה בשימוש, שגיאה כקוד קצר), את גרסת
       האפליקציה, את מערכת ההפעלה של הטלפון ואת הגרסה שלה, את הגדרת השפה, ומזהה סשן אקראי שמתחלף אחרי שעה בלי משחק. הוא
-      לא מקבל מזהי מכשיר או פרסום ולא מידע אישי, והוא לא מקושר לחשבון המקוון שלכם.</p>
+      לא מקבל מזהי מכשיר או פרסום ולא מידע אישי, והוא לא מקושר לחשבון המקוון שלכם. השרת של <bdi>Aptabase</bdi> מסיק
+      את המדינה והאזור שלכם מכתובת ה-<bdi>IP</bdi>, ומשתמש בכתובת, יחד עם מפתח שמתחלף כל יום, כדי לספור שחקנים יומיים
+      באופן אנונימי; הוא לא שומר את כתובת ה-<bdi>IP</bdi>. <bdi>Aptabase</bdi> שומרת את נתוני האנליטיקה האלה עד חמש
+      שנים.</p>
     <p>אם אישרתם בטלפון שיתוף נתוני אבחון עם מפתחי אפליקציות, ייתכן ש-<bdi>Apple</bdi> או <bdi>Google Play</bdi> יציגו
       לנו גם סטטיסטיקות קריסה וביצועים אנונימיות ומצטברות, לפי המדיניות שלהן.</p>
 
@@ -397,13 +409,17 @@
     <p>אפשר לבקש מאיתנו לעיין במידע שלכם, לתקן או למחוק אותו, ובמקום שהחוק נותן את הזכויות האלה (למשל לפי
       ה-<bdi>GDPR</bdi>), גם להגביל את השימוש בו או להתנגד לו, לקבל עותק שלו, ולבטל הסכמה בכל עת. אפשר גם להתלונן
       לרשות להגנת המידע במדינה שלכם (בישראל, הרשות להגנת הפרטיות). כתבו ל-<a
-      href="mailto:doublepixel26@gmail.com">doublepixel26@gmail.com</a>; אנחנו עונים תוך 30 יום. מכיוון שהחשבון המקוון
+      href="mailto:doublepixel26@gmail.com">doublepixel26@gmail.com</a>; אנחנו עונים תוך חודש, הזמן שחוקי הגנת מידע כמו ה-<bdi>GDPR</bdi> מאפשרים.
+      מכיוון שהחשבון המקוון
       שלכם אנונימי, האפשרויות שבתוך המשחק הן הדרך הבטוחה ביותר לפעול לגבי המידע המקוון שלכם.</p>
 
     <h2>16. ילדים</h2>
-    <p><bdi>Gravity Bop</bdi> הוא משחק לקהל הרחב ואינו מיועד לילדים. אנחנו לא אוספים ביודעין מידע אישי מילדים מתחת
-      לגיל 13. אם אתם חושבים שילד מתחת לגיל 13 השתמש בתכונות המקוונות של המשחק, השתמשו ב-<bdi>Settings</bdi> &larr;
-      <bdi>DELETE ONLINE ACCOUNT</bdi> באותו טלפון, או כתבו לנו.</p>
+    <p><bdi>Gravity Bop</bdi> נועד לקהל הרחב. הוא לא מיועד לילדים, הוא לא בקטגוריית הילדים (<bdi>Kids</bdi>) של
+      <bdi>App Store</bdi>, והפרסומות בו לא מוגדרות כפרסומות לילדים. המשחק אף פעם לא שואל שחקנים על גיל, שם, אימייל או
+      כל פרט קשר, ואנחנו לא אוספים ביודעין מידע אישי מילדים מתחת לגיל 13 (או מתחת לגיל שקובע החוק במדינה שלהם). דירוג
+      הגיל של המשחק מתאר את התוכן שלו, לא למי הוא מיועד. אם אתם הורים או אפוטרופוסים וחושבים שהילד שלכם השתמש בתכונות
+      המקוונות של המשחק, השתמשו ב-<bdi>Settings</bdi> &larr; <bdi>DELETE ONLINE ACCOUNT</bdi> באותו טלפון, או כתבו לנו
+      ונעזור.</p>
 
     <h2>17. אבטחה</h2>
     <p>המידע שעובר בין המשחק לשרת שלנו מוצפן בהעברה (<bdi>HTTPS</bdi>). אין מערכת מאובטחת לחלוטין, אבל אנחנו
