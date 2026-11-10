@@ -9,7 +9,9 @@ Older games keep theirs in `barsagivv/arclogic-studio/play-forms/`.
 
 Toy Flyers (`com.doublepixel.toyflyers`), 2026-11-09, matching
 <https://doublepixel-studio.github.io/toyflyers/privacy-policy.html>. Made from Quack Blast's file (same 782 rows and
-ids), with every answer set again. **Not filed yet.**
+ids), with every answer set again. **Filed on 2026-11-10** through the API (`POST applications/<package>/dataSafety`,
+HTTP 204). Play refused the first try with "You cannot answer PSL_HAS_OUTSIDE_APP_ACCOUNTS": when account creation is
+OAuth that optional question must stay empty, so its value was removed from this file.
 
 - Encrypted in transit: yes. Account creation: OAuth (optional Sign in with Google / Apple; the guest account is
   anonymous). Account deletion URL and data deletion URL: `toyflyers/delete-account.html`. Data sold: none.
