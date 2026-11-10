@@ -24,124 +24,400 @@
   .body p,.body li{color:var(--text)}
   .body ul{padding-inline-start:22px}
   .note{background:#EEF9FD;border:1px solid #C5EEF9;border-radius:14px;padding:14px 18px;margin:18px 0}
-  a{color:var(--link)}
-  .foot{max-width:780px;margin:0 auto;color:var(--muted);font-size:13px;text-align:center}
-  @media (max-width:520px){.hero{padding:28px 22px 24px}.body{padding:20px 22px 28px}}
+  .note ul{margin:6px 0 0}
+  .note p{margin:0}
+  a{color:var(--link);overflow-wrap:anywhere}
+  .foot{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+  @media (max-width:560px){body{padding:20px 16px}.hero{padding:28px 22px 24px}.hero h1{font-size:24px}.body{padding:20px 22px 28px}}
 </style>
 </head>
 <body>
 
-<div class="card" id="en">
+<div class="card" id="en" lang="en" dir="ltr">
   <div class="hero">
     <h1>Privacy Policy</h1>
-    <div class="sub">Gravity Bop · DoublePixel Studio · Last updated 28 October 2026</div>
+    <div class="sub">Gravity Bop · DoublePixel · Last updated 10 November 2026</div>
     <div class="switch"><a href="#he">עברית ↓</a></div>
   </div>
   <div class="body">
-    <div class="note"><strong>In short:</strong> this version of Gravity Bop works completely offline. It does not
-      send your information to us or to anyone else. It has no account, no ads, no purchases and no analytics.</div>
+    <p>This policy explains what information the mobile game <strong>Gravity Bop</strong> (the "Game",
+      <code>com.doublepixel.gravityswitch</code>), a one-touch gravity runner, uses, why, and what you can do about it.
+      The Game is made and published by Bar Sagiv, an independent developer in Israel, under the studio name
+      <strong>DoublePixel</strong> ("we", "us"); shown on the App Store as <strong>Bar Sagiv</strong> and on Google
+      Play as <strong>DoublePixel Studio</strong>. These names are the same publisher. Bar Sagiv is responsible for
+      this information (its "controller" under data-protection law). Questions:
+      <a href="mailto:doublepixel26@gmail.com">doublepixel26@gmail.com</a>.</p>
 
-    <p>Gravity Bop (the "Game") is made and published by Bar Sagiv, an independent developer in Israel, under the
-      studio name DoublePixel Studio ("we", "us"). On Google Play the developer is shown as DoublePixel Studio.
-      Bar Sagiv is responsible for this information.</p>
+    <div class="note">
+      <strong>Which version this applies to</strong>
+      <p>The <strong>Android test version</strong> currently distributed through Google Play works offline: it has no
+        ads, no purchases, no analytics and no online features, and it sends nothing to us. For it, only sections 1,
+        14, 15, 16 and 18 and the crash-statistics paragraph of section 7 apply. The other sections apply to versions that have those features: today, the
+        <strong>iPhone version on the App Store</strong>.</p>
+    </div>
+
+    <div class="note">
+      <strong>In short</strong>
+      <ul>
+        <li>Your progress, coins and items are saved on your phone.</li>
+        <li>Online features use an anonymous account, created automatically. No name, email, phone number or sign-in.</li>
+        <li>Leaderboards show a name the Game generates. There is no chat and no text typed by players.</li>
+        <li>Ads come from Google AdMob, with Google's consent message where the law requires it. The Game never asks
+          to track you, so on iPhone it does not access the advertising identifier (IDFA).</li>
+        <li>Purchases go through Apple. We never see your card.</li>
+        <li>Analytics are anonymous (Aptabase) and not linked to your account.</li>
+        <li>We do not sell your data.</li>
+        <li>Settings &rarr; DELETE ONLINE ACCOUNT deletes your online data.</li>
+      </ul>
+    </div>
 
     <h2>1. On your phone</h2>
-    <p>The game saves your progress on your device: levels cleared, Gravity Shards, coins, the avatars and effects you
-      unlocked, missions and achievements, and your settings. This information stays in the app's private storage.
-      It is not backed up to the cloud by the app, and it is deleted when you uninstall the game.
-      Settings → Reset progress erases your level progress at any time.</p>
+    <p>The Game saves your progress on your device: levels cleared, Gravity Shards, coins, the items you unlocked or
+      bought, missions and achievements, and your settings. This save stays in the app's private storage. The Game
+      does not back it up, and it is deleted when you uninstall the Game. Settings &rarr; Reset progress erases your
+      level progress at any time.</p>
 
-    <h2>2. No account and no server</h2>
-    <p>You do not sign in and you do not create an account. This version does not connect to the internet at all
-      (it does not even request the Android network permission), so nothing you do in the game reaches our servers.</p>
+    <h2>2. Your online account</h2>
+    <p>When you use online features, the Game automatically creates an anonymous account with
+      <strong>Firebase Authentication</strong> (Google Firebase). It has no name, email, phone number or password, and
+      you never sign in. The account has a random account id, and a random id created for each installation tells
+      your installs apart. Our server runs on Google Cloud and Firebase in the <strong>me-west1</strong> region
+      (Tel Aviv, Israel).</p>
 
-    <h2>3. Advertising</h2>
-    <p>This version shows no ads and contains no advertising SDK. It does not use the advertising ID.</p>
+    <h2>3. What our server stores</h2>
+    <p>Linked to your anonymous account, our server stores:</p>
+    <ul>
+      <li><strong>Leaderboards:</strong> your scores and distances on the Endless boards (all-time and weekly) and the
+        Daily Challenge boards, with your generated display name.</li>
+      <li><strong>Daily Gift:</strong> your daily streak and recent claims. The server decides the day and the reward.</li>
+      <li><strong>Campaign progress check:</strong> which levels you cleared and when, used as a plausibility check.</li>
+      <li><strong>Accepted run records:</strong> kept for 30 days so that the same run cannot be submitted twice.</li>
+      <li><strong>Rate-limit counters:</strong> how often requests were made, to protect the service from abuse.</li>
+      <li><strong>Push devices:</strong> if you turned on server reminders (section 8).</li>
+      <li><strong>Purchase records:</strong> see section 5.</li>
+    </ul>
 
-    <h2>4. Purchases</h2>
-    <p>This version has no in-app purchases. Coins are earned by playing and can only be spent inside the game.</p>
+    <h2>4. Leaderboards and other players</h2>
+    <p>Other players see your generated display name with your scores and distances on the leaderboards. You cannot
+      type a name, and the Game has no chat and no text written by players.</p>
 
-    <h2>5. Analytics and crash reports</h2>
-    <p>The game itself contains no analytics or crash-reporting tools. If you have allowed your phone to share usage
-      and diagnostics data with Google, Google Play may give us anonymous, aggregated crash and performance statistics.
-      That data is handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+    <h2>5. Purchases</h2>
+    <p>In-app purchases are optional and go through <strong>Apple In-App Purchase</strong>. We never see your card or
+      payment details. Before granting a purchase, our server asks Apple's <strong>App Store Server API</strong> to
+      confirm the transaction. It keeps a purchase record (a hash of the transaction, the product, its status and
+      dates) to handle refunds and prevent fraud.</p>
 
-    <h2>6. Testing programme</h2>
-    <p>If you join the Gravity Bop test through Google Play, Google manages your enrolment under its own policies; we see
-      only what Google Play shows developers about testers. If you send us feedback by email or through a testing
-      community, we receive what you choose to send (for example your email address, a description, screenshots) and
-      use it only to answer you and to fix the game. You can ask us to delete it at any time.</p>
+    <h2>6. Advertising</h2>
+    <p>The Game shows ads through <strong>Google AdMob</strong> (Google Mobile Ads SDK): short videos you choose to
+      watch for a reward, and full-screen ads at breaks between levels and runs: never during play, never in the
+      first five levels, and at most one every 120 seconds. The <strong>NO ADS</strong> purchase removes the
+      full-screen ads; the optional reward videos stay available.</p>
+    <ul>
+      <li>To show and measure ads and prevent fraud, Google may collect device and usage data, such as your
+        approximate location from your IP address, ad interactions and diagnostics, as described in
+        <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use
+        its services</a>.</li>
+      <li>The Game never shows Apple's App Tracking Transparency prompt, so on iPhone it does not access your
+        advertising identifier (IDFA).</li>
+      <li>Before ads appear, players in regions that require it (such as the EEA, the UK and Switzerland) are asked
+        for consent through Google's consent message (Google's User Messaging Platform). Players in US states with
+        privacy laws see Google's US-state privacy message, which lets you opt out of the "sale" or "sharing" of your
+        information for ads. Where these rules apply, you can change your choice at any time in
+        <strong>Settings &rarr; AD PRIVACY</strong>. If you do not consent, ads may still be shown without
+        personalization.</li>
+      <li>Google's consent message lists the ad partners Google works with. Some of them say they may use precise
+        location data; they may do so only if you consent to them in that message.</li>
+    </ul>
 
-    <h2>7. Children</h2>
-    <p>Gravity Bop is a general-audience game. Because this version collects no personal information from anyone, it
-      collects none from children either.</p>
+    <h2>7. Analytics and crash reports</h2>
+    <p>The Game uses <strong>Aptabase</strong>, privacy-first analytics, to understand how the Game is played. It
+      receives anonymous gameplay events (for example a level started or completed, a screen used, an error as a short
+      code), the app version, your phone's operating system and its version, the language setting, and a random
+      session id that changes after an hour without play. It receives no device or advertising identifiers and no
+      personal data, and it is not linked to your online account.</p>
+    <p>If you allowed your phone to share diagnostics with app developers, Apple or Google Play may also give us
+      anonymous, aggregated crash and performance statistics under their own policies.</p>
 
-    <h2>8. Your rights</h2>
-    <p>We hold no personal information from the game. For feedback you sent us by email, you can ask for access,
-      correction or deletion using the contact below.</p>
+    <h2>8. Notifications</h2>
+    <p>The Game sends reminders (for example, that your Daily Gift is ready) only after you say yes in the Game and in
+      your phone's system prompt. Reminders are scheduled on your device. Where server reminders are enabled, a push
+      token (Apple Push Notification service, through Firebase Cloud Messaging) is stored linked to your anonymous
+      account; you get at most one reminder a day, and none in quiet hours. You can turn reminders off in the Game's
+      Settings or in your phone's settings.</p>
 
-    <h2>9. Changes to this policy</h2>
-    <p>If a future version adds online features (such as leaderboards), ads or purchases, we will update this policy
-      before that version is released and change the date above.</p>
+    <h2>9. Why we use it</h2>
+    <ul>
+      <li>To run the Game and the online features you use (account, leaderboards, Daily Challenge, Daily Gift,
+        reminders): to provide the Game you asked for.</li>
+      <li>To keep leaderboards and purchases fair and the service secure (plausibility checks, duplicate prevention,
+        rate limits, purchase records): our legitimate interest.</li>
+      <li>To show ads that keep the Game free: your consent where the law requires it; otherwise our legitimate
+        interest.</li>
+      <li>To improve the Game with anonymous analytics: our legitimate interest.</li>
+    </ul>
 
-    <h2>10. Contact</h2>
-    <p>DoublePixel Studio (Bar Sagiv) — <a href="mailto:doublepixel26@gmail.com">doublepixel26@gmail.com</a></p>
+    <h2>10. Who receives it</h2>
+    <p>We share information only with the services that run the Game for us: <strong>Google</strong> (Firebase
+      Authentication, Google Cloud and Firebase servers, Firebase Cloud Messaging, AdMob and its consent tool, Google
+      Play), <strong>Apple</strong> (App Store, In-App Purchase, the App Store Server API, Apple Push Notification
+      service) and <strong>Aptabase</strong> (analytics). Other players see your generated display name and your
+      leaderboard results. We may also disclose information when the law requires it. <strong>We do not sell your
+      data</strong>, and we do not track you across other companies' apps or websites. Their own policies:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+      <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a></li>
+      <li><a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a></li>
+      <li><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></li>
+      <li><a href="https://aptabase.com/">Aptabase</a></li>
+    </ul>
+
+    <h2>11. Where it is stored</h2>
+    <p>Our server's data is stored in Google Cloud's me-west1 region (Tel Aviv, Israel). Google, Apple and Aptabase may
+      process data in other countries under their own data-protection terms. We run the Game from Israel.</p>
+
+    <h2>12. How long we keep it</h2>
+    <ul>
+      <li><strong>On your phone:</strong> until you uninstall the Game.</li>
+      <li><strong>Online data:</strong> as long as your online account exists, until you delete it (section 13).
+        Accepted run records are deleted after 30 days.</li>
+      <li><strong>Purchase records:</strong> kept after your account is deleted, without any link to you, for refunds
+        and to prevent the same purchase from being used twice.</li>
+      <li>If you uninstall the Game without deleting your online account first, the Game can no longer reach that
+        account and its data stays on our server. You can ask us by email, but because the account has no name or
+        email, we may not be able to find it. Please delete your online account in the Game before uninstalling.</li>
+    </ul>
+
+    <h2>13. Deleting your data</h2>
+    <p>In the Game: <strong>Settings &rarr; DELETE ONLINE ACCOUNT</strong> deletes your server profile, leaderboard
+      entries, run records, Daily Gift streak, Campaign progress record, rate-limit counters, push devices and the
+      anonymous account.
+      Purchase records stay without any link to you, and a later Restore still works. Your local save stays on your
+      phone until you uninstall the Game. Details: <a href="delete-account.html">Delete your online account</a>.</p>
+
+    <h2>14. Testing programme</h2>
+    <p>If you join a Gravity Bop test through Google Play or Apple TestFlight, Google or Apple manages your enrolment
+      under its own policies; we see only what they show developers about testers. If you send us feedback by email or
+      through a testing community, we receive what you choose to send (for example your email address, a description,
+      screenshots) and use it only to answer you and to fix the Game. You can ask us to delete it at any time.</p>
+
+    <h2>15. Your rights</h2>
+    <p>You can ask us to see, correct or delete your information, and, where the law gives you these rights (for
+      example under the GDPR), to restrict or object to its use, to receive a copy, and to withdraw consent at any
+      time. You can also complain to your data protection authority (in Israel, the Privacy Protection Authority).
+      Email <a href="mailto:doublepixel26@gmail.com">doublepixel26@gmail.com</a>; we reply within 30 days. Because your
+      online account is anonymous, the in-game options are the surest way to act on your own online data.</p>
+
+    <h2>16. Children</h2>
+    <p>Gravity Bop is a general-audience game and is not directed at children. We do not knowingly collect personal
+      information from children under 13. If you believe a child under 13 has used the Game's online features, use
+      Settings &rarr; DELETE ONLINE ACCOUNT on that phone, or email us.</p>
+
+    <h2>17. Security</h2>
+    <p>Data sent between the Game and our server is encrypted in transit (HTTPS). No system is perfectly secure, but we
+      work to protect your information.</p>
+
+    <h2>18. Changes and contact</h2>
+    <p>If this policy changes, the new version will be posted at this address with a new "Last updated" date.
+      Contact: DoublePixel (Bar Sagiv; shown on the App Store as Bar Sagiv and on Google Play as DoublePixel Studio) ·
+      <a href="mailto:doublepixel26@gmail.com">doublepixel26@gmail.com</a></p>
+
+    <div class="foot">© 2026 DoublePixel · <a href="./">Gravity Bop</a> · <a href="delete-account.html">Delete your
+      online account</a> · <a href="../">Studio home</a></div>
   </div>
 </div>
 
-<div class="card" id="he" dir="rtl" lang="he">
+<div class="card" id="he" lang="he" dir="rtl">
   <div class="hero">
     <h1>מדיניות פרטיות</h1>
-    <div class="sub">Gravity Bop · DoublePixel Studio · עודכן לאחרונה ב-28 באוקטובר 2026</div>
+    <div class="sub"><bdi>Gravity Bop</bdi> · <bdi>DoublePixel</bdi> · עודכן לאחרונה ב-10 בנובמבר 2026</div>
     <div class="switch"><a href="#en">English ↑</a></div>
   </div>
   <div class="body">
-    <div class="note"><strong>בקצרה:</strong> הגרסה הזו של Gravity Bop עובדת לגמרי בלי אינטרנט. היא לא שולחת את המידע שלכם
-      אלינו או לאף אחד אחר. אין בה חשבון, פרסומות, רכישות או אנליטיקה.</div>
+    <p>המדיניות הזו מסבירה באיזה מידע משתמש משחק המובייל <strong><bdi>Gravity Bop</bdi></strong> ("המשחק",
+      <bdi><code>com.doublepixel.gravityswitch</code></bdi>), משחק ריצה עם כוח משיכה ונגיעה אחת, למה, ומה אפשר לעשות
+      בנושא. את המשחק פיתח ומפרסם בר שגיב, מפתח עצמאי בישראל, תחת שם הסטודיו <strong><bdi>DoublePixel</bdi></strong>
+      ("אנחנו"); ב-<bdi>App Store</bdi> הוא מופיע בשם <strong><bdi>Bar Sagiv</bdi></strong> וב-<bdi>Google Play</bdi>
+      בשם <strong><bdi>DoublePixel Studio</bdi></strong>. השמות האלה הם אותו מפרסם. בר שגיב אחראי למידע הזה ("בעל
+      השליטה" לפי דיני הגנת המידע). שאלות: <a href="mailto:doublepixel26@gmail.com">doublepixel26@gmail.com</a>.</p>
 
-    <p>Gravity Bop ("המשחק") פותח ומפורסם על ידי בר שגיב, מפתח עצמאי בישראל, תחת שם הסטודיו DoublePixel Studio
-      ("אנחנו"). ב-Google Play המפתח מוצג בשם DoublePixel Studio. בר שגיב אחראי למידע הזה.</p>
+    <div class="note">
+      <strong>על איזו גרסה המדיניות חלה</strong>
+      <p><strong>גרסת הבדיקה לאנדרואיד</strong> שמופצת כרגע דרך <bdi>Google Play</bdi> עובדת בלי אינטרנט: אין בה
+        פרסומות, רכישות, אנליטיקה או תכונות מקוונות, והיא לא שולחת לנו שום דבר. לגביה חלים רק סעיפים 1, 14, 15, 16
+        ו-18 והפסקה על סטטיסטיקות הקריסה בסעיף 7. שאר הסעיפים חלים על גרסאות שיש בהן את התכונות האלה: כיום, <strong>גרסת האייפון
+        ב-<bdi>App Store</bdi></strong>.</p>
+    </div>
+
+    <div class="note">
+      <strong>בקצרה</strong>
+      <ul>
+        <li>ההתקדמות, המטבעות והפריטים שלכם נשמרים בטלפון.</li>
+        <li>התכונות המקוונות משתמשות בחשבון אנונימי שנוצר אוטומטית. בלי שם, אימייל, מספר טלפון או התחברות.</li>
+        <li>טבלאות המובילים מציגות שם שהמשחק יוצר. אין צ'אט ואין טקסט ששחקנים מקלידים.</li>
+        <li>הפרסומות מגיעות מ-<bdi>Google AdMob</bdi>, עם הודעת ההסכמה של <bdi>Google</bdi> במקומות שבהם החוק דורש.
+          המשחק אף פעם לא מבקש לעקוב אחריכם, ולכן באייפון הוא לא ניגש למזהה הפרסום (<bdi>IDFA</bdi>).</li>
+        <li>הרכישות עוברות דרך <bdi>Apple</bdi>. אנחנו אף פעם לא רואים את הכרטיס שלכם.</li>
+        <li>האנליטיקה אנונימית (<bdi>Aptabase</bdi>) ולא מקושרת לחשבון שלכם.</li>
+        <li>אנחנו לא מוכרים את המידע שלכם.</li>
+        <li><bdi>Settings</bdi> &larr; <bdi>DELETE ONLINE ACCOUNT</bdi> מוחק את המידע המקוון שלכם.</li>
+      </ul>
+    </div>
 
     <h2>1. בטלפון שלכם</h2>
-    <p>המשחק שומר את ההתקדמות שלכם במכשיר: שלבים שעברתם, Gravity Shards, מטבעות, הדמויות והאפקטים שפתחתם, משימות
-      והישגים, וההגדרות שלכם. המידע נשאר באחסון הפרטי של האפליקציה, האפליקציה לא מגבה אותו לענן, והוא נמחק כשמסירים את
-      המשחק. אפשר למחוק את ההתקדמות בכל רגע דרך Settings ← Reset progress.</p>
+    <p>המשחק שומר את ההתקדמות שלכם במכשיר: שלבים שעברתם, <bdi>Gravity Shards</bdi>, מטבעות, הפריטים שפתחתם או
+      קניתם, משימות והישגים, וההגדרות שלכם. השמירה נשארת באחסון הפרטי של האפליקציה. המשחק לא מגבה אותה, והיא נמחקת
+      כשמסירים את המשחק. אפשר למחוק את ההתקדמות בשלבים בכל רגע דרך <bdi>Settings</bdi> &larr; <bdi>Reset
+      progress</bdi>.</p>
 
-    <h2>2. בלי חשבון ובלי שרת</h2>
-    <p>אין התחברות ואין יצירת חשבון. הגרסה הזו לא מתחברת לאינטרנט בכלל (היא אפילו לא מבקשת הרשאת רשת באנדרואיד), כך
-      ששום דבר שאתם עושים במשחק לא מגיע לשרתים שלנו.</p>
+    <h2>2. החשבון המקוון שלכם</h2>
+    <p>כשמשתמשים בתכונות מקוונות, המשחק יוצר אוטומטית חשבון אנונימי ב-<strong><bdi>Firebase
+      Authentication</bdi></strong> (<bdi>Google Firebase</bdi>). אין בו שם, אימייל, מספר טלפון או סיסמה, ואף פעם לא
+      מתחברים. לחשבון יש מזהה חשבון אקראי, ומזהה אקראי שנוצר לכל התקנה מבדיל בין ההתקנות שלכם. השרת שלנו פועל
+      ב-<bdi>Google Cloud</bdi> וב-<bdi>Firebase</bdi> באזור <strong><bdi>me-west1</bdi></strong> (תל אביב,
+      ישראל).</p>
 
-    <h2>3. פרסומות</h2>
-    <p>בגרסה הזו אין פרסומות ואין רכיב פרסום. היא לא משתמשת במזהה הפרסום.</p>
+    <h2>3. מה השרת שלנו שומר</h2>
+    <p>בקישור לחשבון האנונימי שלכם, השרת שלנו שומר:</p>
+    <ul>
+      <li><strong>טבלאות מובילים:</strong> התוצאות והמרחקים שלכם בטבלאות של <bdi>Endless</bdi> (של כל הזמנים
+        ושבועית) ושל <bdi>Daily Challenge</bdi>, עם שם התצוגה שנוצר עבורכם.</li>
+      <li><strong>המתנה היומית (<bdi>Daily Gift</bdi>):</strong> רצף הימים והאיסופים האחרונים שלכם. השרת קובע את היום
+        ואת הפרס.</li>
+      <li><strong>בדיקת התקדמות בקמפיין:</strong> אילו שלבים עברתם ומתי, לבדיקת סבירות.</li>
+      <li><strong>רשומות של ריצות שהתקבלו:</strong> נשמרות 30 יום כדי שאותה ריצה לא תישלח פעמיים.</li>
+      <li><strong>מוני הגבלת קצב:</strong> כמה פעמים נשלחו בקשות, כדי להגן על השירות מניצול לרעה.</li>
+      <li><strong>מכשירים להתראות:</strong> אם הפעלתם תזכורות מהשרת (סעיף 8).</li>
+      <li><strong>רשומות רכישה:</strong> ראו סעיף 5.</li>
+    </ul>
 
-    <h2>4. רכישות</h2>
-    <p>בגרסה הזו אין רכישות בתוך האפליקציה. מטבעות מרוויחים במשחק ואפשר להשתמש בהם רק בתוך המשחק.</p>
+    <h2>4. טבלאות המובילים ושחקנים אחרים</h2>
+    <p>שחקנים אחרים רואים בטבלאות המובילים את שם התצוגה שנוצר עבורכם יחד עם התוצאות והמרחקים שלכם. אי אפשר להקליד
+      שם, ואין במשחק צ'אט או טקסט שכתבו שחקנים.</p>
 
-    <h2>5. אנליטיקה ודיווחי קריסה</h2>
-    <p>במשחק עצמו אין כלי אנליטיקה או דיווח קריסות. אם אישרתם בטלפון שיתוף נתוני שימוש ואבחון עם Google, ייתכן ש-Google Play
-      תציג לנו סטטיסטיקות קריסה וביצועים אנונימיות ומצטברות, בכפוף ל<a href="https://policies.google.com/privacy">מדיניות
-      הפרטיות של Google</a>.</p>
+    <h2>5. רכישות</h2>
+    <p>רכישות בתוך האפליקציה הן לבחירתכם ועוברות דרך <strong><bdi>Apple In-App Purchase</bdi></strong>. אנחנו אף פעם
+      לא רואים את הכרטיס או את פרטי התשלום שלכם. לפני שרכישה ניתנת, השרת שלנו מבקש מ-<strong><bdi>App Store Server
+      API</bdi></strong> של <bdi>Apple</bdi> לאשר את העסקה. הוא שומר רשומת רכישה (גיבוב (<bdi>hash</bdi>) של העסקה,
+      המוצר, הסטטוס והתאריכים) כדי לטפל בהחזרים ולמנוע הונאות.</p>
 
-    <h2>6. תוכנית הבדיקות</h2>
-    <p>אם הצטרפתם לבדיקה של Gravity Bop דרך Google Play, ההרשמה מנוהלת על ידי Google לפי המדיניות שלה; אנחנו רואים רק את
-      מה ש-Google Play מציגה למפתחים על בודקים. אם שלחתם לנו משוב במייל או דרך קהילת בדיקות, אנחנו מקבלים את מה שבחרתם
-      לשלוח (למשל כתובת מייל, תיאור, צילומי מסך) ומשתמשים בזה רק כדי לענות לכם ולתקן את המשחק. אפשר לבקש למחוק את זה בכל עת.</p>
+    <h2>6. פרסומות</h2>
+    <p>המשחק מציג פרסומות באמצעות <strong><bdi>Google AdMob</bdi></strong> (<bdi>Google Mobile Ads SDK</bdi>):
+      סרטונים קצרים שבוחרים לצפות בהם תמורת פרס, ופרסומות במסך מלא בהפסקות בין שלבים וריצות: אף פעם לא באמצע משחק,
+      אף פעם לא בחמשת השלבים הראשונים, ולכל היותר אחת בכל 120 שניות. הרכישה <strong><bdi>NO ADS</bdi></strong>
+      מסירה את הפרסומות במסך מלא; סרטוני הפרס שלבחירתכם נשארים זמינים.</p>
+    <ul>
+      <li>כדי להציג ולמדוד פרסומות ולמנוע הונאות, <bdi>Google</bdi> עשויה לאסוף מידע על המכשיר והשימוש, כמו מיקום
+        משוער לפי כתובת ה-<bdi>IP</bdi>, אינטראקציות עם פרסומות ונתוני אבחון, כמתואר ב<a
+        href="https://policies.google.com/technologies/partner-sites">הסבר של <bdi>Google</bdi> על השימוש במידע
+        מאפליקציות שמשתמשות בשירותים שלה</a>.</li>
+      <li>המשחק אף פעם לא מציג את בקשת המעקב של <bdi>Apple</bdi> (<bdi>App Tracking Transparency</bdi>), ולכן באייפון
+        הוא לא ניגש למזהה הפרסום שלכם (<bdi>IDFA</bdi>).</li>
+      <li>לפני שמוצגות פרסומות, שחקנים באזורים שבהם הדבר נדרש (למשל האיחוד האירופי והאזור הכלכלי האירופי, בריטניה
+        ושווייץ) מתבקשים להסכים בהודעת ההסכמה של <bdi>Google</bdi> (<bdi>User Messaging Platform</bdi>). שחקנים
+        במדינות בארה"ב שיש בהן חוקי פרטיות רואים את הודעת הפרטיות של <bdi>Google</bdi> למדינות ארה"ב, שמאפשרת לבקש
+        שהמידע שלכם לא "יימכר" או "ישותף" לצורכי פרסום. במקומות שבהם הכללים האלה חלים, אפשר לשנות את הבחירה בכל עת
+        ב-<strong><bdi>Settings</bdi> &larr; <bdi>AD PRIVACY</bdi></strong>. גם בלי הסכמה עשויות להופיע פרסומות לא
+        מותאמות אישית.</li>
+      <li>הודעת ההסכמה של <bdi>Google</bdi> מפרטת את שותפי הפרסום ש-<bdi>Google</bdi> עובדת איתם. חלקם מציינים שהם
+        עשויים להשתמש במידע מיקום מדויק; הם רשאים לעשות זאת רק אם הסכמתם להם בהודעה הזו.</li>
+    </ul>
 
-    <h2>7. ילדים</h2>
-    <p>Gravity Bop הוא משחק לקהל הרחב. מכיוון שהגרסה הזו לא אוספת מידע אישי מאף אחד, היא גם לא אוספת מידע מילדים.</p>
+    <h2>7. אנליטיקה ודיווחי קריסה</h2>
+    <p>המשחק משתמש ב-<strong><bdi>Aptabase</bdi></strong>, אנליטיקה ששמה את הפרטיות במקום הראשון, כדי להבין איך
+      משחקים בו. הוא מקבל אירועי משחק אנונימיים (למשל שלב שהתחיל או הושלם, מסך שהיה בשימוש, שגיאה כקוד קצר), את גרסת
+      האפליקציה, את מערכת ההפעלה של הטלפון ואת הגרסה שלה, את הגדרת השפה, ומזהה סשן אקראי שמתחלף אחרי שעה בלי משחק. הוא
+      לא מקבל מזהי מכשיר או פרסום ולא מידע אישי, והוא לא מקושר לחשבון המקוון שלכם.</p>
+    <p>אם אישרתם בטלפון שיתוף נתוני אבחון עם מפתחי אפליקציות, ייתכן ש-<bdi>Apple</bdi> או <bdi>Google Play</bdi> יציגו
+      לנו גם סטטיסטיקות קריסה וביצועים אנונימיות ומצטברות, לפי המדיניות שלהן.</p>
 
-    <h2>8. הזכויות שלכם</h2>
-    <p>אין אצלנו מידע אישי מהמשחק. לגבי משוב ששלחתם במייל, אפשר לבקש עיון, תיקון או מחיקה דרך פרטי הקשר למטה.</p>
+    <h2>8. התראות</h2>
+    <p>המשחק שולח תזכורות (למשל, שהמתנה היומית מחכה) רק אחרי שאמרתם כן במשחק ובבקשת המערכת של הטלפון. התזכורות
+      מתוזמנות במכשיר שלכם. במקומות שבהם תזכורות מהשרת מופעלות, אסימון התראות (<bdi>Apple Push Notification
+      service</bdi>, דרך <bdi>Firebase Cloud Messaging</bdi>) נשמר בקישור לחשבון האנונימי שלכם; תקבלו לכל היותר
+      תזכורת אחת ביום, ואף אחת בשעות השקט. אפשר לכבות את התזכורות בהגדרות של המשחק או בהגדרות הטלפון.</p>
 
-    <h2>9. שינויים במדיניות</h2>
-    <p>אם גרסה עתידית תוסיף תכונות מקוונות (כמו טבלאות שיאים), פרסומות או רכישות, נעדכן את המדיניות לפני שהגרסה תשוחרר
-      ונשנה את התאריך למעלה.</p>
+    <h2>9. למה אנחנו משתמשים במידע</h2>
+    <ul>
+      <li>כדי להפעיל את המשחק ואת התכונות המקוונות שבהן אתם משתמשים (חשבון, טבלאות מובילים, <bdi>Daily
+        Challenge</bdi>, המתנה היומית, תזכורות): כדי לספק את המשחק שביקשתם.</li>
+      <li>כדי לשמור על טבלאות מובילים ורכישות הוגנות ועל אבטחת השירות (בדיקות סבירות, מניעת כפילויות, הגבלת קצב,
+        רשומות רכישה): האינטרס הלגיטימי שלנו.</li>
+      <li>כדי להציג פרסומות שמשאירות את המשחק חינמי: הסכמתכם במקומות שבהם החוק דורש; אחרת, האינטרס הלגיטימי
+        שלנו.</li>
+      <li>כדי לשפר את המשחק בעזרת אנליטיקה אנונימית: האינטרס הלגיטימי שלנו.</li>
+    </ul>
 
-    <h2>10. יצירת קשר</h2>
-    <p>DoublePixel Studio (בר שגיב) — <a href="mailto:doublepixel26@gmail.com">doublepixel26@gmail.com</a></p>
+    <h2>10. מי מקבל את המידע</h2>
+    <p>אנחנו משתפים מידע רק עם השירותים שמפעילים את המשחק עבורנו: <strong><bdi>Google</bdi></strong> (<bdi>Firebase
+      Authentication</bdi>, השרתים ב-<bdi>Google Cloud</bdi> וב-<bdi>Firebase</bdi>, <bdi>Firebase Cloud
+      Messaging</bdi>, <bdi>AdMob</bdi> וכלי ההסכמה שלה, <bdi>Google Play</bdi>), <strong><bdi>Apple</bdi></strong>
+      (<bdi>App Store</bdi>, <bdi>In-App Purchase</bdi>, <bdi>App Store Server API</bdi>, <bdi>Apple Push Notification
+      service</bdi>) ו-<strong><bdi>Aptabase</bdi></strong> (אנליטיקה). שחקנים אחרים רואים את שם התצוגה שנוצר עבורכם
+      ואת התוצאות שלכם בטבלאות המובילים. ייתכן שנמסור מידע גם כשהחוק מחייב. <strong>אנחנו לא מוכרים את המידע
+      שלכם</strong>, ואנחנו לא עוקבים אחריכם באפליקציות או באתרים של חברות אחרות. המדיניות שלהם:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy">מדיניות הפרטיות של <bdi>Google</bdi></a></li>
+      <li><a href="https://policies.google.com/technologies/partner-sites">איך <bdi>Google</bdi> משתמשת במידע מאפליקציות שמשתמשות בשירותים שלה</a></li>
+      <li><a href="https://firebase.google.com/support/privacy">פרטיות ואבטחה ב-<bdi>Firebase</bdi></a></li>
+      <li><a href="https://www.apple.com/legal/privacy/">מדיניות הפרטיות של <bdi>Apple</bdi></a></li>
+      <li><a href="https://aptabase.com/"><bdi>Aptabase</bdi></a></li>
+    </ul>
+
+    <h2>11. איפה המידע נשמר</h2>
+    <p>המידע בשרת שלנו נשמר באזור <bdi>me-west1</bdi> של <bdi>Google Cloud</bdi> (תל אביב, ישראל). <bdi>Google</bdi>,
+      <bdi>Apple</bdi> ו-<bdi>Aptabase</bdi> עשויות לעבד מידע גם במדינות אחרות לפי תנאי הגנת המידע שלהן. אנחנו מפעילים
+      את המשחק מישראל.</p>
+
+    <h2>12. כמה זמן אנחנו שומרים</h2>
+    <ul>
+      <li><strong>בטלפון שלכם:</strong> עד שמסירים את המשחק.</li>
+      <li><strong>מידע מקוון:</strong> כל עוד החשבון המקוון שלכם קיים, עד שתמחקו אותו (סעיף 13). רשומות של ריצות
+        שהתקבלו נמחקות אחרי 30 יום.</li>
+      <li><strong>רשומות רכישה:</strong> נשמרות גם אחרי מחיקת החשבון, בלי שום קישור אליכם, לטיפול בהחזרים וכדי שלא
+        יהיה אפשר להשתמש באותה רכישה פעמיים.</li>
+      <li>אם מסירים את המשחק בלי למחוק קודם את החשבון המקוון, המשחק כבר לא יכול להגיע לחשבון הזה, והמידע שלו נשאר
+        בשרת שלנו. אפשר לפנות אלינו באימייל, אבל מכיוון שלחשבון אין שם או אימייל, ייתכן שלא נוכל למצוא אותו. לכן
+        מחקו בבקשה את החשבון המקוון במשחק לפני שאתם מסירים אותו.</li>
+    </ul>
+
+    <h2>13. מחיקת המידע</h2>
+    <p>במשחק: <strong><bdi>Settings</bdi> &larr; <bdi>DELETE ONLINE ACCOUNT</bdi></strong> מוחק את הפרופיל בשרת, את
+      הרשומות בטבלאות המובילים, את רשומות הריצות, את רצף המתנה היומית, את רשומת ההתקדמות בקמפיין, את מוני הגבלת הקצב,
+      את המכשירים להתראות ואת החשבון האנונימי. רשומות הרכישה נשארות בלי שום קישור אליכם, ושחזור רכישות (<bdi>Restore</bdi>) עדיין עובד
+      אחר כך. השמירה המקומית נשארת בטלפון עד שמסירים את המשחק. פרטים: <a href="delete-account.html#he">מחיקת החשבון
+      המקוון</a>.</p>
+
+    <h2>14. תוכנית הבדיקות</h2>
+    <p>אם הצטרפתם לבדיקה של <bdi>Gravity Bop</bdi> דרך <bdi>Google Play</bdi> או <bdi>Apple TestFlight</bdi>,
+      ההרשמה מנוהלת על ידי <bdi>Google</bdi> או <bdi>Apple</bdi> לפי המדיניות שלהן; אנחנו רואים רק את מה שהן מציגות
+      למפתחים על בודקים. אם שלחתם לנו משוב באימייל או דרך קהילת בדיקות, אנחנו מקבלים את מה שבחרתם לשלוח (למשל כתובת
+      אימייל, תיאור, צילומי מסך) ומשתמשים בזה רק כדי לענות לכם ולתקן את המשחק. אפשר לבקש למחוק את זה בכל עת.</p>
+
+    <h2>15. הזכויות שלכם</h2>
+    <p>אפשר לבקש מאיתנו לעיין במידע שלכם, לתקן או למחוק אותו, ובמקום שהחוק נותן את הזכויות האלה (למשל לפי
+      ה-<bdi>GDPR</bdi>), גם להגביל את השימוש בו או להתנגד לו, לקבל עותק שלו, ולבטל הסכמה בכל עת. אפשר גם להתלונן
+      לרשות להגנת המידע במדינה שלכם (בישראל, הרשות להגנת הפרטיות). כתבו ל-<a
+      href="mailto:doublepixel26@gmail.com">doublepixel26@gmail.com</a>; אנחנו עונים תוך 30 יום. מכיוון שהחשבון המקוון
+      שלכם אנונימי, האפשרויות שבתוך המשחק הן הדרך הבטוחה ביותר לפעול לגבי המידע המקוון שלכם.</p>
+
+    <h2>16. ילדים</h2>
+    <p><bdi>Gravity Bop</bdi> הוא משחק לקהל הרחב ואינו מיועד לילדים. אנחנו לא אוספים ביודעין מידע אישי מילדים מתחת
+      לגיל 13. אם אתם חושבים שילד מתחת לגיל 13 השתמש בתכונות המקוונות של המשחק, השתמשו ב-<bdi>Settings</bdi> &larr;
+      <bdi>DELETE ONLINE ACCOUNT</bdi> באותו טלפון, או כתבו לנו.</p>
+
+    <h2>17. אבטחה</h2>
+    <p>המידע שעובר בין המשחק לשרת שלנו מוצפן בהעברה (<bdi>HTTPS</bdi>). אין מערכת מאובטחת לחלוטין, אבל אנחנו
+      פועלים כדי להגן על המידע שלכם.</p>
+
+    <h2>18. שינויים ויצירת קשר</h2>
+    <p>אם המדיניות תשתנה, הגרסה החדשה תפורסם בכתובת הזו עם תאריך "עודכן לאחרונה" חדש. יצירת קשר:
+      <bdi>DoublePixel</bdi> (בר שגיב; מופיע ב-<bdi>App Store</bdi> בשם <bdi>Bar Sagiv</bdi> וב-<bdi>Google Play</bdi>
+      בשם <bdi>DoublePixel Studio</bdi>) · <a href="mailto:doublepixel26@gmail.com">doublepixel26@gmail.com</a></p>
+
+    <div class="foot">© 2026 <bdi>DoublePixel</bdi> · <a href="./#he"><bdi>Gravity Bop</bdi></a> · <a
+      href="delete-account.html#he">מחיקת החשבון המקוון</a> · <a href="../#he">דף הסטודיו</a></div>
   </div>
 </div>
 
-<p class="foot">© 2026 DoublePixel Studio · Gravity Bop</p>
 </body>
 </html>

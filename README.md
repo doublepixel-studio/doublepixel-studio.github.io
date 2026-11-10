@@ -44,6 +44,7 @@ in that store. How to edit it and how to check it afterwards: the studio repo's
 | Game | Privacy policy | Terms |
 |---|---|---|
 | Toy Flyers (`com.doublepixel.toyflyers`) | <https://doublepixel-studio.github.io/toyflyers/privacy-policy.html> | <https://doublepixel-studio.github.io/toyflyers/terms.html> (support page <https://doublepixel-studio.github.io/toyflyers/>, account deletion <https://doublepixel-studio.github.io/toyflyers/delete-account.html>; Play Data safety: `play-forms/data-safety-toyflyers.csv`) |
+| Gravity Bop (`com.doublepixel.gravityswitch`) | <https://doublepixel-studio.github.io/gravity-bop/privacy-policy.html> | none (support page <https://doublepixel-studio.github.io/gravity-bop/>, account deletion <https://doublepixel-studio.github.io/gravity-bop/delete-account.html>) |
 | RouteBots (`com.doublepixel.routebots`) | <https://doublepixel-studio.github.io/routebots/privacy-policy.html> | none (no accounts or purchases) |
 
 Games published before 2026-10-23 keep their pages at <https://barsagivv.github.io/arclogic-studio/>.
